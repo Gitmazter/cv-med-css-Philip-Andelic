@@ -1,0 +1,25 @@
+/*Variables*/
+$background:rgb(73, 92, 41);
+$footer_height: 75px;
+$footer_social_height: $footer_height * 0.8;
+$skills_padding:$footer_height*1.75;
+
+@import './normalize.scss';
+@import './nav';
+@import './hero';
+@import './abtme';
+@import './footer';
+@import './resume';
+@import './projects';
+
+body {
+    background-color: $background;
+}
+
+
+
+  
+
+
+
+    

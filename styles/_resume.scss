@@ -1,0 +1,73 @@
+#facepic {
+    height: 50mm;
+    width: 50mm;
+    border-radius: 5mm;
+}
+
+.resume {
+    top:3rem;
+    position: relative;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: fit-content;
+
+    section {
+        display: flex;
+        overflow: auto;
+        border-right: 0.1em black solid;
+        border-left: 0.1em black solid;
+        border-bottom: 0.1em black solid;
+        flex-direction: column;
+
+        .sec_h3 {
+            background-color: gray;
+            height: auto;
+            padding-left: 2em;
+
+            h3 {
+                width: 15vw;
+            }
+        }
+        .sec_content {
+            padding-left: 3em;
+            padding-right:2em;
+        }
+    }
+
+    .info {
+        height: fit-content;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 0.1em black solid;
+
+        a {
+            color: rgba(0, 0, 0, 0);
+            .resume_icon {
+                height: 5vh;
+                width: 5vw;
+            }
+        }
+        
+        ul {
+            list-style: none;
+            li{
+                a{
+                    text-decoration:none;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .education {
+        flex-direction: column;
+    }
+
+    .skills {
+        margin-bottom: $skills_padding;
+    }
+}   
