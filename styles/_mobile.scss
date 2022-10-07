@@ -24,11 +24,8 @@
         align-items: center;
         padding-bottom: 6rem;
     }
-
-    .all_projects {
-        
-        flex-direction: column;
-        
+    .all_projects {  
+        flex-direction: column;  
         .left_projects {
             width: 75vw;
             img{
@@ -37,10 +34,10 @@
         }
         .right_projects{
             width: 75vw;
-            
-
         }
+    } 
+    .info {
+        min-height: fit-content;
+        flex-direction: column;
     }
-
-    
 }

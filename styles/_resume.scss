@@ -1,20 +1,17 @@
 #facepic {
-    height: 50mm;
-    width: 50mm;
-    border-radius: 5mm;
+    height:150px ; 
+    padding: 0;
+    border-radius: 5px;
 }
 
 .resume {
-    top:3rem;
+    top: $top_nav_height;
     position: relative;
     font-size: 1rem;
     background-color: $background;
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
-    margin-left: 0px;
-    margin-right: 0px;
     height: fit-content;
-
     section {
         display: flex;
         overflow: auto;
@@ -22,38 +19,33 @@
         border-left: 0.1em black solid;
         border-bottom: 0.1em black solid;
         flex-direction: column;
-
         .sec_h3 {
+            text-decoration: underline;
             background-color: beige;
             color: black;
             font-family: 'Major Mono Display', monospace;
             height: auto;
             padding-left: 2em;
-
-            h3 {
-                width: 15vw;
-            }
         }
         .sec_content {
             padding-left: 3em;
             padding-right:2em;
         }
-    }
+    }   
 
     .info {
         display: flex;
-        min-height: fit-content;
         flex-direction: row;
-        justify-content: space-between;
-        border-top: 0.1em black solid;
-
+        justify-content:space-between;
+        border-top: 0.1em black solid;    
         a {
             color: rgba(0, 0, 0, 0);
             .resume_icon {
                 height: 5vh;
-                width: 5vw;
+                width: 5vh;
+                padding-right:2vw;
             }
-        }
+        }  
         
         ul {
             list-style: none;
@@ -61,16 +53,26 @@
                 a{
                     text-decoration:none;
                     color: black;
+                    
                 }
             }
         }
     }
 
     .education {
-        flex-direction: column;
+        margin-bottom: $edu_padding;
+        .edu_title {
+            min-width: fit-content;
+            display: inline-flex;
+            flex-direction: row;
+            text-decoration: underline;
+            .edu_name{
+                display: block;
+                min-width: 35vw;
+            }
+            .edu_year {
+                padding-left: 5vw;
+            }
+        }
     }
-
-    .skills {
-        margin-bottom: $skills_padding;
-    }
-}   
+}

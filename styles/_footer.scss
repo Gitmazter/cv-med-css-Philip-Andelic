@@ -1,33 +1,17 @@
-
-
 .footer {
-    background-color: beige;
-    width: 100%;
-    height: $footer_height;
+    bottom: 0;
+    position: fixed;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    bottom: 0;
-    position: fixed;
+    background-color: beige;
     font-family: 'Major Mono Display', monospace;
+    width: 100%;
+    height: $footer_height;
     border-top: solid 2px black;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.587);
-
-    
-    
-
     .footer_socials {
-        display: block;
-        position: relative;
-        float: left;
-        margin-left: 1em;
-        a{
-            img {
-                height: 1px;
-            }
-        }
-
-        width: auto;
+        margin-left: 10px;
         a {
             text-decoration: none;
             img{
@@ -35,34 +19,32 @@
                 width: $footer_social_height;
             }
         }
-    }
-    
-    .footer_p {
-        position: relative;     
+    }   
+    .footer_p {   
         font-size: 1em;   
     }
 
     .footer_contact {
     display: flex; 
+    align-items: center;
     border-left: solid black 1px;
     height: $footer_height;
-    font-size: 1.5em;
+    font-size: $contact_button_font_size;
+
     /*font-size: 1em; for media query and width 25vw below*/
-
-    
-        .contact_button {
-            display: block;
-            text-align: center;
-            border: none;
-            width: 15vw;
-            cursor: pointer;
-            background-color: black;
-            color: white;
-        }
-        .contact_button:hover {
-            background-color: pink;
-            color: black;
-
-        }
+       .contact_button {
+           text-align: center;
+           border: none;
+           padding-top:$contact_button_padding;
+           padding-bottom:$contact_button_padding;
+           width: 15vw;
+           cursor: pointer;
+           background-color: black;
+           color: white;
+       }
+       .contact_button:hover {
+           background-color: pink;
+           color: black;
+       }
     }
 }

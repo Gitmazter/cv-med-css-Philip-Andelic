@@ -44,7 +44,6 @@
   left:100px;
   transform : translate(-10px , -16px);
 }
-
 .logo:hover div:nth-child(2){
    transform : translate(-20px, -10px);
 }
@@ -56,13 +55,11 @@
   top:120px;
   left:46px;
 }
-
 #trap2 {
   top:45px;
   left:51px;
   rotate:120deg;
 }
-
 #trap3 {
   top:50px;
   left:92px;
@@ -106,21 +103,21 @@
 
 
 .topnav {
-  height: 3rem;
-  margin-bottom: 3rem;
-  width: 100%;
   top: 0;
+  display: flex;
+  justify-content: space-around;
   position: fixed;
-  z-index: 5;
+  height: $top_nav_height;
+  width: 100%;
   background-color: beige;
+  font-family: 'Major Mono Display', monospace;
   border-bottom: 1px black solid;
   border-top: 1px black solid;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.388);
-  display: flex;
-  justify-content: space-around;
-  font-family: 'Major Mono Display', monospace;
+
+  z-index: 5;
   .homebut {
-    height: 3rem;
+    height: $top_nav_height;
   }
   
   a {
