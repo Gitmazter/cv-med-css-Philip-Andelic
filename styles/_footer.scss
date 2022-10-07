@@ -11,6 +11,7 @@
     position: fixed;
     font-family: 'Major Mono Display', monospace;
     border-top: solid 2px black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.587);
 
     
     
@@ -20,6 +21,11 @@
         position: relative;
         float: left;
         margin-left: 1em;
+        a{
+            img {
+                height: 1px;
+            }
+        }
 
         width: auto;
         a {
@@ -32,13 +38,16 @@
     }
     
     .footer_p {
-        position: relative;        
+        position: relative;     
+        font-size: 1em;   
     }
 
     .footer_contact {
     display: flex; 
     border-left: solid black 1px;
     height: $footer_height;
+    font-size: 1.5em;
+    /*font-size: 1em; for media query and width 25vw below*/
 
     
         .contact_button {

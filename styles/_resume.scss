@@ -8,8 +8,8 @@
     top:3rem;
     position: relative;
     font-size: 1rem;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: $background;
+    color: white;
     font-family: 'Montserrat Alternates', sans-serif;
     margin-left: 0px;
     margin-right: 0px;
@@ -24,7 +24,9 @@
         flex-direction: column;
 
         .sec_h3 {
-            background-color: gray;
+            background-color: beige;
+            color: black;
+            font-family: 'Major Mono Display', monospace;
             height: auto;
             padding-left: 2em;
 
@@ -39,7 +41,8 @@
     }
 
     .info {
-        height: fit-content;
+        display: flex;
+        min-height: fit-content;
         flex-direction: row;
         justify-content: space-between;
         border-top: 0.1em black solid;
@@ -57,7 +60,7 @@
             li{
                 a{
                     text-decoration:none;
-                    color: white;
+                    color: black;
                 }
             }
         }

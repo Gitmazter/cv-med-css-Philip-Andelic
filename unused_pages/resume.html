@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Andzi</title>
+    <link rel="stylesheet" href="Mi-Html-Css-Inl-2-CV-2.0/styles/normalize.css">
+    <link rel="stylesheet" href="Mi-Html-Css-Inl-2-CV-2.0/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="media-assets/andzilogo.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat+Alternates&family=VT323&display=swap" rel="stylesheet"> 
+  </head>
+  <!-- Terminal window saying 
+        > cd medieinstitutet/students/interns
+        ./philip.a
+        > philip.a: Knowledge Download: 100%
+        > philip.a: Awaiting Workload...
+        > philip.a: Take on intern? y/n   -->
+  <body>
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="media-assets/close_dark.svg" alt="close menu"></a>
+      <a href="index.html">Home</a>
+      <a href="pages/resume.html">Resume</a>
+      <a href="pages/aboutus.html">About Me</a>
+      <a href="pages/blog.html">Blog</a>
+      <a href="pages/projects.html">Projects</a>
+      <a href="pages/contact.html">Contact</a>
+    </nav>
+    <div class="logo" onclick="openNav()">
+      <div class="trap" id="trap1"> </div>
+      <div class="trap" id="trap2"> </div>
+      <div class="trap" id="trap3"> </div>
+    </div>
+    <section class="resume"> 
+      <section class="info">
+        <div>
+          <h1>Philip Andelic</h1>
+          <h2>Blockchain Developer</h2>
+        </div>
+        <img src="media-assets/maface.jpg" alt="my face" id="facepic">
+        <ul class="res_contact">
+          <li>
+            <a href="https://www.linkedin.com/in/philip-andelic-9ba890123/">
+              <img class="resume_icon" src="media-assets/linkedin.svg">
+            </a>
+          </li>
+          <li>
+            <a href="mailto:philip.andelic@gmail.com">
+              <img class="resume_icon" src="media-assets/email-envelope-solid.svg">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Gitmazter">
+              <img class="resume_icon" src="media-assets/github.svg">
+            </a>
+          </li>
+        </ul>  
+      </section>
+      <section class="profile">
+        <div class="sec_h3">
+            <h3 class="res_subtitle">Introduction</h3>
+        </div>
+        <article class="sec_content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>      
+        </article>
+      </section> 
+      <section class="experience">
+        <div class="sec_h3">
+            <h3 class="res_subtitle">Experience</h3>
+        </div>
+        <article class="sec_content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+        </article>
+      </section> 
+      <section class="Technicals">
+        <div class="sec_h3">
+            <h3 class="res_subtitle">Technicals</h3>
+        </div>
+        <article class="sec_content">
+          <div class="container">
+            <div class="skills">
+              <h1>Skills</h1>
+              <div class="border">
+            <table>
+              <thead>
+               <tr>
+                <td>Skill</td>
+                <td>Level</td>      
+               </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HTML</td>
+                  <td><span class="percent">50%</span>
+                    <div class="bar one">
+                      <div class="fill" style="width:50%;"></div>
+                    </div>
+                  </td>
+                </tr>
+            </tbody>
+             <tbody>
+               <tr>
+                 <td>SASS styling</td>
+                 <td><span class="percent">30%</span>
+                   <div class="bar one">
+                     <div class="fill" style="width:30%;"></div>
+                   </div>
+                 </td>
+               </tr>
+           </tbody>             
+            </table>
+           </div>
+            </div>
+          </div>          
+        </article>
+      </section>     
+      </section>
+      <section class="education">
+        <div class="sec_h3">
+            <h3 class="res_subtitle">Education</h3>
+        </div>
+        <article class="sec_content">
+          <h4>Medieinstitutet - Blockchain Development</h4>
+          <h5>2022-2024</h5>
+          <p>Currently studying the ins and outs of Blockchain Development
+            with the first class in Sweden to take on the subject.
+            Interesting times ahead. </p>
+    
+          <h4>Harvard X - CS50X Introduction to Computer Science</h4>
+          <h5>2022-2022</h5>
+          <p>A well curated online course teaching students the basics of Computer
+            Science, a beautiful addition to my above degree.
+          </p>
+        </article>
+    </section>
+    </section>
+  </body>
+  <script src="myscript.js"></script>
+</html>

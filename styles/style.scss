@@ -5,12 +5,14 @@ $footer_social_height: $footer_height * 0.8;
 $skills_padding:$footer_height*1.75;
 
 @import './normalize.scss';
+@import './mobile';
 @import './nav';
 @import './hero';
 @import './abtme';
 @import './footer';
 @import './resume';
 @import './projects';
+
 
 body {
     background-color: $background;
