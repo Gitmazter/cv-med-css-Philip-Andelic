@@ -1,0 +1,43 @@
+@media screen and (max-width:500px) {
+    .footer_contact a {
+        font-size: 1em;
+        min-width: fit-content;
+    }
+    .footer_p {
+        display: none;
+    }
+    .footer_socials {
+        flex-direction: row;
+    }
+    .info {
+        max-width: 100vw;
+        a {
+            display: none;
+            img{
+                display: none;
+                padding-right: 0;
+            }
+        }
+    }
+    .abt_me {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 6rem;
+    }
+    .all_projects {  
+        flex-direction: column;  
+        .left_projects {
+            width: 75vw;
+            img{
+                width: 50vw;
+            }
+        }
+        .right_projects{
+            width: 75vw;
+        }
+    } 
+    .info {
+        min-height: fit-content;
+        flex-direction: column;
+    }
+}
