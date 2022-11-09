@@ -16,6 +16,7 @@ $contact_button_padding : ($footer_height - $contact_button_font_size) / 2;
 @import './footer';
 @import './resume';
 @import './projects';
+@import './calculator';
 
 body {
     background-color: $background;
