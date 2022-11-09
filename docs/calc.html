@@ -19,7 +19,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat+Alternates&family=VT323&display=swap" rel="stylesheet"> 
   </head>
 
-  
   <body>
     <nav id="myTopnav" class="topnav">
       <a href="index.html"><img src="media-assets/andzilogo.png" alt="Home" class="homebut"></a>
@@ -28,45 +27,42 @@
       <a href="projects.html">Projects</a>
     </nav>
 
-    <main class="project_main">
-      <header>
-        <h1>My projects</h1>
-      </header>
-      <section class="all_projects">
-        <div class="left_projects">
-          <article class="project_1">
-            <h2>Ground Control To Major Tom</h2>
-            <h3>Languages : HTML SASS</h3>
-            <img src="media-assets/major_tom_collage.jpg" alt="a collage of my Major Tom project">
-          </article>
-
-          <article class="project_2">
-            <h2>This Website</h2>
-            <h3>Languages : HTML SASS JavaScript</h3> 
-          </article>
+    <div class="calculator">
+        <div class="input" id="input"></div>
+        <div class="buttons">
+            <div class="operators">
+                <div id="add">+</div>
+                <div id="sub">-</div>
+                <div id="mul">&times;</div>
+                <div id="div">&divide;</div>
+            </div>
+            <div class="bottom_panel">
+              <div class="numbers_panel">
+                  <div class="numbers">
+                      <div>7</div>
+                      <div>8</div>
+                      <div>9</div>
+                  </div>
+                  <div class="numbers">
+                      <div>4</div>
+                      <div>5</div>
+                      <div>6</div>
+                  </div>
+                  <div class="numbers">
+                      <div>3</div>
+                      <div>2</div>
+                      <div id="one">1</div>
+                  </div>
+                  <div class="numbers">
+                      <div>.</div>
+                      <div>0</div>
+                      <div id="clear">C</div>
+                  </div>
+              </div>  
+              <div class="equals" id="result">=</div> 
+            </div> 
         </div>
-        <div class="right_projects">
-          <article class="project_3">
-            <h2>OSRS Woodcutting Bot</h2>
-            <h3> Languages : JavaScript + RobotJS</h3>
-          </article>
-
-          <article class="project_4">
-            <h2>Clock</h2>
-            <div id="clock_display" class="clock" onload="showTime()"></div>
-          </article>
-
-          <article class="project_5">
-            <h2>calculator</h2>
-            <a href="calc.html">Click here for calculator action!</a>
-          </article>
-        </div>
-      </section>
-    </main>
-
-
-
-
+      </div>
 
     <footer class="footer">
       <div class="footer_socials">
@@ -86,5 +82,6 @@
       </div>
     </footer>
   <script src="myscript.js"></script>
+  <script src="calc.js"></script>
 </body>
 </html>
