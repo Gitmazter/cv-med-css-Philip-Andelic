@@ -1,0 +1,40 @@
+.abt_me{
+  display: flex;
+  padding-top: $top_nav_height;
+  padding-left: 2rem;
+  padding-right: 2rem; 
+  p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+  }
+  h1 {
+    font-family: 'Major Mono Display', monospace;
+    color: white;
+  }
+}
+
+.donation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  background-color: beige;
+  padding: 15px;
+  border: solid rgb(50, 50, 50) 5px;
+  border-radius:4px;
+  p {
+    color: black;
+    font-family: monospace;
+  }
+  
+  .sendEthButton{
+    width: 180px;
+    height: 50px;
+    background-image:url("../media-assets/donate.png");
+    background-size: contain;
+    border: 3px outset black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.436);
+    cursor: pointer;
+  } 
+}
